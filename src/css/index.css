@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+h3 {
+    font-size: 20px;
+}
+html,
+body {
+    height: 700px;
+    background-color: #333;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    font-weight: 100;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+/*Home btn for about and faq*/
+
+.homeBtn {
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    margin-left: -48%;
+}
+/* Padding for spacing */
+
+.inner {
+    padding: 30px;
+}
+/*Bubble Graph*/
+
+.node {
+    stroke-width: 1.5px;
+}
+.node:hover circle {
+    fill: grey !important;
+}
+text {
+    font: 18px 'Open Sans', sans-serif;
+    text-anchor: middle;
+    pointer-events: none;
+    fill: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+circle {
+    fill: #d83000;
+    stroke: white;
+    stroke-width: 2px;
+}
+#graph {
+    margin-left: 15%;
+    width: 100%;
+    height: 250px;
+    margin-top: -2%;
+}
+svg {
+    margin-top: -10%;
+    vertical-align: middle;
+}
+/*Buttons*/
+.buttons{
+    vertical-align: middle;
+    width:100%;
+}
+
+#btnUser {
+    position: relative;
+    cursor: pointer;
+    left:-10%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    max-width: 50px;
+}
+#btnUser:hover {
+    border-radius: 50px;
+    background-color: white;
+    color: #434343;
+}
+#btnUser.active{
+    border-radius: 50px;
+    background-color: white;
+    color: #434343;
+}
+#btnTraffic {
+    position: relative;
+    cursor: pointer;
+    left:0;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    max-width: 60px;
+}
+#btnTraffic:hover {
+    border-radius: 50px;
+    background-color: white;
+    color: #434343;
+}
+#btnPacket {
+    position: relative;
+    cursor: pointer;
+    left:10%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    max-width: 70px;
+    z-index: 1;
+}
+#btnPacket:hover {
+    border-radius: 50px;
+    background-color: white;
+    color: #434343;
+}
+/*Mouseover Display*/
+
+.tooltip {
+    font-family: 'Montserrat', sans-serif;
+    top: 20%;
+    right:5%;
+    line-height: 10px;
+    font-size: 7px;
+}
+/*
+ * Header
+ */
+
+.masthead-brand {
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.masthead-nav> li {
+    display: inline-block;
+    margin-left: -15%;
+}
+.masthead-nav> li+ li {
+    margin-left: 10px;
+}
+.masthead-nav> li> a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    color: rgba(255, 255, 255, .75);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav> li> a:hover,
+.masthead-nav> li> a:focus {
+    background-color: transparent;
+    border-bottom-color: #fff;
+}
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 500px) {
+    .tooltip {
+        top: 15%;
+        right: 5%;
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #graph {
+        margin-top: 18%;
+        width: 800px;
+        height: 550px;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    svg {
+        margin-top: -8%;
+        margin-left: -15%;
+    }
+    .masthead {
+        top: 0;
+    }
+    #btnUser{
+        margin-top: -10%;
+        left: -5%;
+    }
+    #btnTraffic{
+        left: 0;
+    }
+    #btnPacket {
+        left: 5%;
+    }
+    /* Start the vertical centering */
+    
+    /* Handle the widths */
+    .site-wrapper-inner {
+    vertical-align: middle;
+  }
+    .masthead,
+    .cover-container {
+        width: 100%;
+    }
+}
+@media (min-width: 776px) {
+     .masthead-brand {
+        float: left;
+        position: relative;
+    }
+    .masthead-nav {
+        position: relative;
+        float: right;
+    }
+    #graph {
+        margin-top: 35%;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .tooltip {
+        top: 30%;
+        left: -66%;
+        right:0;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    #graph {
+        width: 1000px;
+        height: 550px;
+        margin-left: 15%;
+        margin-top: auto;
+    }
+    #btnUser{
+        margin-top: 8%;
+    }
+}
+@media (min-width: 999px){
+    #btnUser{
+        margin-top: 5%;
+    }
+}
